@@ -1,5 +1,7 @@
 import pygame
 
+# === Ekrans =========================================
+
 # === Poga =========================================
 
 class Poga:
@@ -41,14 +43,18 @@ pygame.init()
 Platums = 1000
 Augstums = 650
 
-#izveido programmas logu
+# izveido programmas logu
 Logs = pygame.display.set_mode((Platums, Augstums)) 
 pygame.display.set_caption("Dārgumu Medības Džungļos")
 
 Fonts = pygame.font.SysFont("comicsansms", 30, bold=True)
+MazsFonts = pygame.font.SysFont("comicsansms", 18)
 
 Fons = pygame.image.load("assets/fons.png")
 Fons = pygame.transform.scale(Fons, (Platums, Augstums))
+
+Karte = pygame.image.load("assets/karte.png")
+Karte = pygame.transform.scale(Karte, (800, 400))
 
 Pogas = [
     Poga(350, 250, 300, 60, "Spēlēt"),
@@ -57,7 +63,52 @@ Pogas = [
     Poga(350, 460, 300, 60, "Iziet")
 ]
 
+AtpakalPoga = Poga(40, 550, 170, 55, "Atpakaļ")
+
+Ekrans = "sakums"
 Darbojas = True # mainīgais, kas kontrolē programmas darbību
+
+
+# Parāda sākuma ekrānu
+def ParaditSakumaEkranu():
+    Logs.blit(Fons, (0, 0))
+
+    for poga in Pogas:
+        poga.Paradit(Logs, Fonts)
+
+
+# Parāda instrukciju logu
+def ParaditInstrukcijuLogu():
+    Logs.blit(Fons, (0, 0))
+
+    # Parāda karti instrukcijas fonā
+    Logs.blit(Karte, (100, 150))
+
+    Virsraksts = Fonts.render("Spēles noteikumi", True, pygame.Color("#000000"))
+    Logs.blit(Virsraksts, (190, 195))
+
+    Instrukcija = [
+        "1. Ievadi savu vārdu.",
+        "2. Izvēlies grūtības līmeni un jautājumu kategoriju.",
+        "3. Atbildi uz 10 jautājumiem, katram izvēloties vienu no 4 atbilžu variantiem.",
+        "4. Par katru pareizu atbildi iegūsi 10 punktus.",
+        "5. Par katru nepareizu atbildi zaudēsi 5 punktus.",
+        "6. Punktu skaits nevar kļūt mazāks par 0.",
+        "7. Spēles beigās redzēsi savu rezultātu un uzzināsi, vai atradi dārgumu.",
+        "",
+        "Veiksmi dārgumu medībās!"
+    ]
+
+    y = 250
+
+    # Pa vienai rindai parāda instrukcijas tekstu
+    for rinda in Instrukcija:
+        Teksts = MazsFonts.render(rinda, True, pygame.Color("#000000"))
+        Logs.blit(Teksts, (190, y))
+        y += 28
+
+    AtpakalPoga.Paradit(Logs, Fonts)
+
 
 while (Darbojas == True):
 
@@ -70,17 +121,28 @@ while (Darbojas == True):
         if Event.type == pygame.MOUSEBUTTONDOWN:
             Pozicija = Event.pos  # Saglabā peles pozīciju
 
-            for poga in Pogas:
-                if poga.VaiNospiesta(Pozicija):
-                    print("Nospiesta poga:", poga.Teksts)
+            if Ekrans == "sakums":
 
-                    if poga.Teksts == "Iziet":
-                        Darbojas = False
+                for poga in Pogas:
+                    if poga.VaiNospiesta(Pozicija):
+                        print("Nospiesta poga:", poga.Teksts)
 
-    Logs.blit(Fons, (0, 0))
+                        if poga.Teksts == "Spēles noteikumi":
+                            Ekrans = "instrukcija"
 
-    for poga in Pogas:
-        poga.Paradit(Logs, Fonts)
+                        if poga.Teksts == "Iziet":
+                            Darbojas = False
+
+            elif Ekrans == "instrukcija":
+
+                if AtpakalPoga.VaiNospiesta(Pozicija):
+                    Ekrans = "sakums"
+
+    if Ekrans == "sakums":
+        ParaditSakumaEkranu()
+
+    elif Ekrans == "instrukcija":
+        ParaditInstrukcijuLogu()
     
     # Atjauno ekrāna attēlu
     pygame.display.update()
