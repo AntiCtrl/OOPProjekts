@@ -1,0 +1,1802 @@
+[
+    {
+        "kategorija": "Matemātika",
+        "grutiba": "Viegls",
+        "jautajums": "Cik ir 2 + 2?",
+        "atbildes": [
+            "3",
+            "4",
+            "5",
+            "6"
+        ],
+        "pareiza": "4"
+    },
+    {
+        "kategorija": "Matemātika",
+        "grutiba": "Viegls",
+        "jautajums": "Cik ir 5 + 3?",
+        "atbildes": [
+            "7",
+            "8",
+            "9",
+            "10"
+        ],
+        "pareiza": "8"
+    },
+    {
+        "kategorija": "Matemātika",
+        "grutiba": "Viegls",
+        "jautajums": "Cik ir 10 - 4?",
+        "atbildes": [
+            "4",
+            "5",
+            "6",
+            "7"
+        ],
+        "pareiza": "6"
+    },
+    {
+        "kategorija": "Matemātika",
+        "grutiba": "Viegls",
+        "jautajums": "Cik ir 8 / 2?",
+        "atbildes": [
+            "2",
+            "3",
+            "4",
+            "5"
+        ],
+        "pareiza": "4"
+    },
+    {
+        "kategorija": "Matemātika",
+        "grutiba": "Viegls",
+        "jautajums": "Kurš skaitlis ir pāra?",
+        "atbildes": [
+            "3",
+            "5",
+            "8",
+            "9"
+        ],
+        "pareiza": "8"
+    },
+    {
+        "kategorija": "Matemātika",
+        "grutiba": "Viegls",
+        "jautajums": "Cik ir 6 + 7?",
+        "atbildes": [
+            "11",
+            "12",
+            "13",
+            "14"
+        ],
+        "pareiza": "13"
+    },
+    {
+        "kategorija": "Matemātika",
+        "grutiba": "Viegls",
+        "jautajums": "Cik ir 9 - 3?",
+        "atbildes": [
+            "5",
+            "6",
+            "7",
+            "8"
+        ],
+        "pareiza": "6"
+    },
+    {
+        "kategorija": "Matemātika",
+        "grutiba": "Viegls",
+        "jautajums": "Cik ir 4 * 2?",
+        "atbildes": [
+            "6",
+            "7",
+            "8",
+            "9"
+        ],
+        "pareiza": "8"
+    },
+    {
+        "kategorija": "Matemātika",
+        "grutiba": "Viegls",
+        "jautajums": "Kurš skaitlis ir lielāks?",
+        "atbildes": [
+            "12",
+            "9",
+            "5",
+            "3"
+        ],
+        "pareiza": "12"
+    },
+    {
+        "kategorija": "Matemātika",
+        "grutiba": "Viegls",
+        "jautajums": "Cik ir 15 - 5?",
+        "atbildes": [
+            "5",
+            "10",
+            "15",
+            "20"
+        ],
+        "pareiza": "10"
+    },
+    {
+        "kategorija": "Matemātika",
+        "grutiba": "Vidējs",
+        "jautajums": "Cik ir 12 * 4?",
+        "atbildes": [
+            "36",
+            "40",
+            "48",
+            "52"
+        ],
+        "pareiza": "48"
+    },
+    {
+        "kategorija": "Matemātika",
+        "grutiba": "Vidējs",
+        "jautajums": "Cik ir 81 / 9?",
+        "atbildes": [
+            "7",
+            "8",
+            "9",
+            "10"
+        ],
+        "pareiza": "9"
+    },
+    {
+        "kategorija": "Matemātika",
+        "grutiba": "Vidējs",
+        "jautajums": "Cik ir 7 * 8?",
+        "atbildes": [
+            "54",
+            "56",
+            "58",
+            "64"
+        ],
+        "pareiza": "56"
+    },
+    {
+        "kategorija": "Matemātika",
+        "grutiba": "Vidējs",
+        "jautajums": "Cik ir 100 - 37?",
+        "atbildes": [
+            "53",
+            "63",
+            "67",
+            "73"
+        ],
+        "pareiza": "63"
+    },
+    {
+        "kategorija": "Matemātika",
+        "grutiba": "Vidējs",
+        "jautajums": "Kāds ir skaitļa 25 kvadrāts?",
+        "atbildes": [
+            "125",
+            "525",
+            "625",
+            "725"
+        ],
+        "pareiza": "625"
+    },
+    {
+        "kategorija": "Matemātika",
+        "grutiba": "Vidējs",
+        "jautajums": "Cik ir 14 * 3?",
+        "atbildes": [
+            "32",
+            "40",
+            "42",
+            "45"
+        ],
+        "pareiza": "42"
+    },
+    {
+        "kategorija": "Matemātika",
+        "grutiba": "Vidējs",
+        "jautajums": "Cik ir 96 / 8?",
+        "atbildes": [
+            "10",
+            "11",
+            "12",
+            "13"
+        ],
+        "pareiza": "12"
+    },
+    {
+        "kategorija": "Matemātika",
+        "grutiba": "Vidējs",
+        "jautajums": "Cik ir 45 + 28?",
+        "atbildes": [
+            "63",
+            "73",
+            "83",
+            "93"
+        ],
+        "pareiza": "73"
+    },
+    {
+        "kategorija": "Matemātika",
+        "grutiba": "Vidējs",
+        "jautajums": "Cik ir 11 * 11?",
+        "atbildes": [
+            "111",
+            "121",
+            "131",
+            "141"
+        ],
+        "pareiza": "121"
+    },
+    {
+        "kategorija": "Matemātika",
+        "grutiba": "Vidējs",
+        "jautajums": "Cik ir 150 - 75?",
+        "atbildes": [
+            "65",
+            "70",
+            "75",
+            "80"
+        ],
+        "pareiza": "75"
+    },
+    {
+        "kategorija": "Matemātika",
+        "grutiba": "Grūts",
+        "jautajums": "Cik ir 15 * 16?",
+        "atbildes": [
+            "220",
+            "230",
+            "240",
+            "250"
+        ],
+        "pareiza": "240"
+    },
+    {
+        "kategorija": "Matemātika",
+        "grutiba": "Grūts",
+        "jautajums": "Cik ir 144 / 12?",
+        "atbildes": [
+            "10",
+            "11",
+            "12",
+            "13"
+        ],
+        "pareiza": "12"
+    },
+    {
+        "kategorija": "Matemātika",
+        "grutiba": "Grūts",
+        "jautajums": "Cik ir 2 pakāpē 6?",
+        "atbildes": [
+            "32",
+            "48",
+            "64",
+            "128"
+        ],
+        "pareiza": "64"
+    },
+    {
+        "kategorija": "Matemātika",
+        "grutiba": "Grūts",
+        "jautajums": "Cik ir 13 * 13?",
+        "atbildes": [
+            "159",
+            "169",
+            "179",
+            "189"
+        ],
+        "pareiza": "169"
+    },
+    {
+        "kategorija": "Matemātika",
+        "grutiba": "Grūts",
+        "jautajums": "Cik ir 1000 / 25?",
+        "atbildes": [
+            "20",
+            "30",
+            "40",
+            "50"
+        ],
+        "pareiza": "40"
+    },
+    {
+        "kategorija": "Matemātika",
+        "grutiba": "Grūts",
+        "jautajums": "Cik ir 18 * 17?",
+        "atbildes": [
+            "296",
+            "306",
+            "316",
+            "326"
+        ],
+        "pareiza": "306"
+    },
+    {
+        "kategorija": "Matemātika",
+        "grutiba": "Grūts",
+        "jautajums": "Cik ir 225 / 15?",
+        "atbildes": [
+            "10",
+            "15",
+            "20",
+            "25"
+        ],
+        "pareiza": "15"
+    },
+    {
+        "kategorija": "Matemātika",
+        "grutiba": "Grūts",
+        "jautajums": "Cik ir 3 pakāpē 4?",
+        "atbildes": [
+            "27",
+            "64",
+            "81",
+            "243"
+        ],
+        "pareiza": "81"
+    },
+    {
+        "kategorija": "Matemātika",
+        "grutiba": "Grūts",
+        "jautajums": "Cik ir 19 * 12?",
+        "atbildes": [
+            "218",
+            "228",
+            "238",
+            "248"
+        ],
+        "pareiza": "228"
+    },
+    {
+        "kategorija": "Matemātika",
+        "grutiba": "Grūts",
+        "jautajums": "Cik ir 360 / 9?",
+        "atbildes": [
+            "30",
+            "35",
+            "40",
+            "45"
+        ],
+        "pareiza": "40"
+    },
+    {
+        "kategorija": "Vēsture",
+        "grutiba": "Viegls",
+        "jautajums": "Kas ir Latvijas galvaspilsēta?",
+        "atbildes": [
+            "Rīga",
+            "Liepāja",
+            "Ventspils",
+            "Daugavpils"
+        ],
+        "pareiza": "Rīga"
+    },
+    {
+        "kategorija": "Vēsture",
+        "grutiba": "Viegls",
+        "jautajums": "Kurā valstī atrodas Rīga?",
+        "atbildes": [
+            "Lietuva",
+            "Latvija",
+            "Igaunija",
+            "Polija"
+        ],
+        "pareiza": "Latvija"
+    },
+    {
+        "kategorija": "Vēsture",
+        "grutiba": "Viegls",
+        "jautajums": "Kurā kontinentā atrodas Latvija?",
+        "atbildes": [
+            "Āzija",
+            "Eiropa",
+            "Āfrika",
+            "Austrālija"
+        ],
+        "pareiza": "Eiropa"
+    },
+    {
+        "kategorija": "Vēsture",
+        "grutiba": "Viegls",
+        "jautajums": "Kāda ir Latvijas valsts valoda?",
+        "atbildes": [
+            "Latviešu",
+            "Angļu",
+            "Vācu",
+            "Poļu"
+        ],
+        "pareiza": "Latviešu"
+    },
+    {
+        "kategorija": "Vēsture",
+        "grutiba": "Viegls",
+        "jautajums": "Kā sauc Latvijas parlamentu?",
+        "atbildes": [
+            "Saeima",
+            "Dome",
+            "Rada",
+            "Senāts"
+        ],
+        "pareiza": "Saeima"
+    },
+    {
+        "kategorija": "Vēsture",
+        "grutiba": "Viegls",
+        "jautajums": "Kura upe tek caur Rīgu?",
+        "atbildes": [
+            "Venta",
+            "Daugava",
+            "Gauja",
+            "Lielupe"
+        ],
+        "pareiza": "Daugava"
+    },
+    {
+        "kategorija": "Vēsture",
+        "grutiba": "Viegls",
+        "jautajums": "Kurā valstī atrodas Tallina?",
+        "atbildes": [
+            "Latvija",
+            "Igaunija",
+            "Lietuva",
+            "Somija"
+        ],
+        "pareiza": "Igaunija"
+    },
+    {
+        "kategorija": "Vēsture",
+        "grutiba": "Viegls",
+        "jautajums": "Kurā valstī atrodas Viļņa?",
+        "atbildes": [
+            "Latvija",
+            "Lietuva",
+            "Igaunija",
+            "Polija"
+        ],
+        "pareiza": "Lietuva"
+    },
+    {
+        "kategorija": "Vēsture",
+        "grutiba": "Viegls",
+        "jautajums": "Kā sauc Latvijas pamatlikumu?",
+        "atbildes": [
+            "Satversme",
+            "Noteikumi",
+            "Kodekss",
+            "Likumi"
+        ],
+        "pareiza": "Satversme"
+    },
+    {
+        "kategorija": "Vēsture",
+        "grutiba": "Viegls",
+        "jautajums": "Kura pilsēta ir pazīstama ar ostu Latvijā?",
+        "atbildes": [
+            "Ventspils",
+            "Madona",
+            "Cēsis",
+            "Ogre"
+        ],
+        "pareiza": "Ventspils"
+    },
+    {
+        "kategorija": "Vēsture",
+        "grutiba": "Vidējs",
+        "jautajums": "Kurā gadā Latvija pasludināja neatkarību?",
+        "atbildes": [
+            "1918",
+            "1920",
+            "1940",
+            "1991"
+        ],
+        "pareiza": "1918"
+    },
+    {
+        "kategorija": "Vēsture",
+        "grutiba": "Vidējs",
+        "jautajums": "Kurā datumā svin Latvijas Republikas proklamēšanas dienu?",
+        "atbildes": [
+            "18. novembrī",
+            "4. maijā",
+            "11. novembrī",
+            "1. septembrī"
+        ],
+        "pareiza": "18. novembrī"
+    },
+    {
+        "kategorija": "Vēsture",
+        "grutiba": "Vidējs",
+        "jautajums": "Kā tautā sauc Brīvības pieminekļa sievietes tēlu?",
+        "atbildes": [
+            "Milda",
+            "Laima",
+            "Māra",
+            "Saule"
+        ],
+        "pareiza": "Milda"
+    },
+    {
+        "kategorija": "Vēsture",
+        "grutiba": "Vidējs",
+        "jautajums": "Kurā gadā Latvija atjaunoja neatkarību?",
+        "atbildes": [
+            "1988",
+            "1990",
+            "1991",
+            "2004"
+        ],
+        "pareiza": "1991"
+    },
+    {
+        "kategorija": "Vēsture",
+        "grutiba": "Vidējs",
+        "jautajums": "Kas ir Lāčplēša diena?",
+        "atbildes": [
+            "Sporta diena",
+            "Varoņu piemiņas diena",
+            "Skolas svētki",
+            "Ziemassvētki"
+        ],
+        "pareiza": "Varoņu piemiņas diena"
+    },
+    {
+        "kategorija": "Vēsture",
+        "grutiba": "Vidējs",
+        "jautajums": "Kurā datumā Latvijā svin Lāčplēša dienu?",
+        "atbildes": [
+            "11. novembrī",
+            "18. novembrī",
+            "4. maijā",
+            "25. decembrī"
+        ],
+        "pareiza": "11. novembrī"
+    },
+    {
+        "kategorija": "Vēsture",
+        "grutiba": "Vidējs",
+        "jautajums": "Kurā gadā Latvija iestājās NATO?",
+        "atbildes": [
+            "1999",
+            "2002",
+            "2004",
+            "2007"
+        ],
+        "pareiza": "2004"
+    },
+    {
+        "kategorija": "Vēsture",
+        "grutiba": "Vidējs",
+        "jautajums": "Kurā gadā Latvija iestājās ES?",
+        "atbildes": [
+            "2001",
+            "2002",
+            "2004",
+            "2007"
+        ],
+        "pareiza": "2004"
+    },
+    {
+        "kategorija": "Vēsture",
+        "grutiba": "Vidējs",
+        "jautajums": "Kas ir Baltijas ceļš?",
+        "atbildes": [
+            "Sporta sacensības",
+            "Miermīlīga akcija",
+            "Kara notikums",
+            "Festivāls"
+        ],
+        "pareiza": "Miermīlīga akcija"
+    },
+    {
+        "kategorija": "Vēsture",
+        "grutiba": "Vidējs",
+        "jautajums": "Kurš datums saistīts ar neatkarības atjaunošanu?",
+        "atbildes": [
+            "4. maijs",
+            "18. novembris",
+            "1. janvāris",
+            "23. jūnijs"
+        ],
+        "pareiza": "4. maijs"
+    },
+    {
+        "kategorija": "Vēsture",
+        "grutiba": "Grūts",
+        "jautajums": "Kurā datumā pieņēma neatkarības atjaunošanas deklarāciju?",
+        "atbildes": [
+            "4. maijā",
+            "18. novembrī",
+            "11. novembrī",
+            "21. augustā"
+        ],
+        "pareiza": "4. maijā"
+    },
+    {
+        "kategorija": "Vēsture",
+        "grutiba": "Grūts",
+        "jautajums": "Kurš karš sākās 1939. gadā?",
+        "atbildes": [
+            "Pirmais pasaules karš",
+            "Otrais pasaules karš",
+            "Aukstais karš",
+            "Livonijas karš"
+        ],
+        "pareiza": "Otrais pasaules karš"
+    },
+    {
+        "kategorija": "Vēsture",
+        "grutiba": "Grūts",
+        "jautajums": "Kurā gadā sākās Pirmais pasaules karš?",
+        "atbildes": [
+            "1912",
+            "1914",
+            "1918",
+            "1920"
+        ],
+        "pareiza": "1914"
+    },
+    {
+        "kategorija": "Vēsture",
+        "grutiba": "Grūts",
+        "jautajums": "Kurā gadā beidzās Otrais pasaules karš Eiropā?",
+        "atbildes": [
+            "1944",
+            "1945",
+            "1946",
+            "1950"
+        ],
+        "pareiza": "1945"
+    },
+    {
+        "kategorija": "Vēsture",
+        "grutiba": "Grūts",
+        "jautajums": "Kurā gadā notika Baltijas ceļš?",
+        "atbildes": [
+            "1987",
+            "1988",
+            "1989",
+            "1991"
+        ],
+        "pareiza": "1989"
+    },
+    {
+        "kategorija": "Vēsture",
+        "grutiba": "Grūts",
+        "jautajums": "Kura valsts ir Baltijas valsts?",
+        "atbildes": [
+            "Somija",
+            "Igaunija",
+            "Zviedrija",
+            "Polija"
+        ],
+        "pareiza": "Igaunija"
+    },
+    {
+        "kategorija": "Vēsture",
+        "grutiba": "Grūts",
+        "jautajums": "Kurā gadā dibināja Latvijas Republiku?",
+        "atbildes": [
+            "1917",
+            "1918",
+            "1919",
+            "1920"
+        ],
+        "pareiza": "1918"
+    },
+    {
+        "kategorija": "Vēsture",
+        "grutiba": "Grūts",
+        "jautajums": "Kur atrodas Brīvības piemineklis?",
+        "atbildes": [
+            "Rīgā",
+            "Liepājā",
+            "Cēsīs",
+            "Jelgavā"
+        ],
+        "pareiza": "Rīgā"
+    },
+    {
+        "kategorija": "Vēsture",
+        "grutiba": "Grūts",
+        "jautajums": "Kā sauc Latvijas pamatlikumu?",
+        "atbildes": [
+            "Satversme",
+            "Konstitūcija",
+            "Līgums",
+            "Nolikums"
+        ],
+        "pareiza": "Satversme"
+    },
+    {
+        "kategorija": "Vēsture",
+        "grutiba": "Grūts",
+        "jautajums": "Kurš notikums saistīts ar 1989. gadu Baltijā?",
+        "atbildes": [
+            "Baltijas ceļš",
+            "Lāčplēša diena",
+            "Satversmes pieņemšana",
+            "ES dibināšana"
+        ],
+        "pareiza": "Baltijas ceļš"
+    },
+    {
+        "kategorija": "Ģeogrāfija",
+        "grutiba": "Viegls",
+        "jautajums": "Kāda ir Francijas galvaspilsēta?",
+        "atbildes": [
+            "Parīze",
+            "Roma",
+            "Berlīne",
+            "Madride"
+        ],
+        "pareiza": "Parīze"
+    },
+    {
+        "kategorija": "Ģeogrāfija",
+        "grutiba": "Viegls",
+        "jautajums": "Kāda ir Itālijas galvaspilsēta?",
+        "atbildes": [
+            "Roma",
+            "Milāna",
+            "Neapole",
+            "Venēcija"
+        ],
+        "pareiza": "Roma"
+    },
+    {
+        "kategorija": "Ģeogrāfija",
+        "grutiba": "Viegls",
+        "jautajums": "Kurā kontinentā atrodas Brazīlija?",
+        "atbildes": [
+            "Eiropa",
+            "Āzija",
+            "Dienvidamerika",
+            "Āfrika"
+        ],
+        "pareiza": "Dienvidamerika"
+    },
+    {
+        "kategorija": "Ģeogrāfija",
+        "grutiba": "Viegls",
+        "jautajums": "Kura jūra atrodas pie Latvijas?",
+        "atbildes": [
+            "Baltijas jūra",
+            "Melnā jūra",
+            "Vidusjūra",
+            "Sarkanā jūra"
+        ],
+        "pareiza": "Baltijas jūra"
+    },
+    {
+        "kategorija": "Ģeogrāfija",
+        "grutiba": "Viegls",
+        "jautajums": "Kur atrodas piramīdas Gīzā?",
+        "atbildes": [
+            "Ēģiptē",
+            "Grieķijā",
+            "Meksikā",
+            "Indijā"
+        ],
+        "pareiza": "Ēģiptē"
+    },
+    {
+        "kategorija": "Ģeogrāfija",
+        "grutiba": "Viegls",
+        "jautajums": "Kurā valstī atrodas Londona?",
+        "atbildes": [
+            "Francija",
+            "Vācija",
+            "Apvienotā Karaliste",
+            "Īrija"
+        ],
+        "pareiza": "Apvienotā Karaliste"
+    },
+    {
+        "kategorija": "Ģeogrāfija",
+        "grutiba": "Viegls",
+        "jautajums": "Kura ir Latvijas kaimiņvalsts?",
+        "atbildes": [
+            "Spānija",
+            "Lietuva",
+            "Portugāle",
+            "Norvēģija"
+        ],
+        "pareiza": "Lietuva"
+    },
+    {
+        "kategorija": "Ģeogrāfija",
+        "grutiba": "Viegls",
+        "jautajums": "Kāda ir Vācijas galvaspilsēta?",
+        "atbildes": [
+            "Berlīne",
+            "Hamburga",
+            "Minhene",
+            "Ķelne"
+        ],
+        "pareiza": "Berlīne"
+    },
+    {
+        "kategorija": "Ģeogrāfija",
+        "grutiba": "Viegls",
+        "jautajums": "Kurā valstī atrodas Tallina?",
+        "atbildes": [
+            "Igaunija",
+            "Latvija",
+            "Lietuva",
+            "Somija"
+        ],
+        "pareiza": "Igaunija"
+    },
+    {
+        "kategorija": "Ģeogrāfija",
+        "grutiba": "Viegls",
+        "jautajums": "Kurā valstī atrodas Viļņa?",
+        "atbildes": [
+            "Lietuva",
+            "Latvija",
+            "Igaunija",
+            "Polija"
+        ],
+        "pareiza": "Lietuva"
+    },
+    {
+        "kategorija": "Ģeogrāfija",
+        "grutiba": "Vidējs",
+        "jautajums": "Kura ir garākā upe pasaulē?",
+        "atbildes": [
+            "Nīla",
+            "Daugava",
+            "Donava",
+            "Sēna"
+        ],
+        "pareiza": "Nīla"
+    },
+    {
+        "kategorija": "Ģeogrāfija",
+        "grutiba": "Vidējs",
+        "jautajums": "Kura valsts ir lielākā pēc platības?",
+        "atbildes": [
+            "Kanāda",
+            "Krievija",
+            "Ķīna",
+            "ASV"
+        ],
+        "pareiza": "Krievija"
+    },
+    {
+        "kategorija": "Ģeogrāfija",
+        "grutiba": "Vidējs",
+        "jautajums": "Kurā kontinentā atrodas Sahara?",
+        "atbildes": [
+            "Āfrika",
+            "Āzija",
+            "Eiropa",
+            "Austrālija"
+        ],
+        "pareiza": "Āfrika"
+    },
+    {
+        "kategorija": "Ģeogrāfija",
+        "grutiba": "Vidējs",
+        "jautajums": "Kura pilsēta ir Igaunijas galvaspilsēta?",
+        "atbildes": [
+            "Tartu",
+            "Tallina",
+            "Pērnava",
+            "Narva"
+        ],
+        "pareiza": "Tallina"
+    },
+    {
+        "kategorija": "Ģeogrāfija",
+        "grutiba": "Vidējs",
+        "jautajums": "Kura pilsēta ir Lietuvas galvaspilsēta?",
+        "atbildes": [
+            "Kauņa",
+            "Klaipēda",
+            "Viļņa",
+            "Šauļi"
+        ],
+        "pareiza": "Viļņa"
+    },
+    {
+        "kategorija": "Ģeogrāfija",
+        "grutiba": "Vidējs",
+        "jautajums": "Kura kalnu sistēma atrodas Eiropā?",
+        "atbildes": [
+            "Alpi",
+            "Andi",
+            "Himalaji",
+            "Atlasa kalni"
+        ],
+        "pareiza": "Alpi"
+    },
+    {
+        "kategorija": "Ģeogrāfija",
+        "grutiba": "Vidējs",
+        "jautajums": "Kur atrodas Amazones lietusmeži?",
+        "atbildes": [
+            "Dienvidamerikā",
+            "Eiropā",
+            "Austrālijā",
+            "Antarktīdā"
+        ],
+        "pareiza": "Dienvidamerikā"
+    },
+    {
+        "kategorija": "Ģeogrāfija",
+        "grutiba": "Vidējs",
+        "jautajums": "Kura valsts ir slavena ar fjordiem?",
+        "atbildes": [
+            "Norvēģija",
+            "Polija",
+            "Ungārija",
+            "Latvija"
+        ],
+        "pareiza": "Norvēģija"
+    },
+    {
+        "kategorija": "Ģeogrāfija",
+        "grutiba": "Vidējs",
+        "jautajums": "Kura valsts sastāv no daudzām salām un tās galvaspilsēta ir Tokija?",
+        "atbildes": [
+            "Ķīna",
+            "Japāna",
+            "Koreja",
+            "Taizeme"
+        ],
+        "pareiza": "Japāna"
+    },
+    {
+        "kategorija": "Ģeogrāfija",
+        "grutiba": "Vidējs",
+        "jautajums": "Kura ir lielākā okeāna nosaukums?",
+        "atbildes": [
+            "Atlantijas",
+            "Klusais",
+            "Indijas",
+            "Ziemeļu Ledus"
+        ],
+        "pareiza": "Klusais"
+    },
+    {
+        "kategorija": "Ģeogrāfija",
+        "grutiba": "Grūts",
+        "jautajums": "Kura ir augstākā virsotne pasaulē?",
+        "atbildes": [
+            "Everests",
+            "Monblāns",
+            "Elbruss",
+            "Kilimandžaro"
+        ],
+        "pareiza": "Everests"
+    },
+    {
+        "kategorija": "Ģeogrāfija",
+        "grutiba": "Grūts",
+        "jautajums": "Kā sauc pasaules lielāko salu?",
+        "atbildes": [
+            "Grenlande",
+            "Madagaskara",
+            "Islande",
+            "Japāna"
+        ],
+        "pareiza": "Grenlande"
+    },
+    {
+        "kategorija": "Ģeogrāfija",
+        "grutiba": "Grūts",
+        "jautajums": "Kura valsts atrodas gan Eiropā, gan Āzijā?",
+        "atbildes": [
+            "Turcija",
+            "Portugāle",
+            "Īrija",
+            "Islande"
+        ],
+        "pareiza": "Turcija"
+    },
+    {
+        "kategorija": "Ģeogrāfija",
+        "grutiba": "Grūts",
+        "jautajums": "Kā sauc līniju, kas sadala Zemi puslodēs?",
+        "atbildes": [
+            "Ekvators",
+            "Meridiāns",
+            "Tropu loks",
+            "Polārais loks"
+        ],
+        "pareiza": "Ekvators"
+    },
+    {
+        "kategorija": "Ģeogrāfija",
+        "grutiba": "Grūts",
+        "jautajums": "Kur atrodas Andu kalni?",
+        "atbildes": [
+            "Dienvidamerikā",
+            "Eiropā",
+            "Āfrikā",
+            "Āzijā"
+        ],
+        "pareiza": "Dienvidamerikā"
+    },
+    {
+        "kategorija": "Ģeogrāfija",
+        "grutiba": "Grūts",
+        "jautajums": "Kura ir lielākā valsts Dienvidamerikā?",
+        "atbildes": [
+            "Argentīna",
+            "Brazīlija",
+            "Čīle",
+            "Peru"
+        ],
+        "pareiza": "Brazīlija"
+    },
+    {
+        "kategorija": "Ģeogrāfija",
+        "grutiba": "Grūts",
+        "jautajums": "Kura jūra ir ļoti sāļa starp Izraēlu un Jordāniju?",
+        "atbildes": [
+            "Nāves jūra",
+            "Baltijas jūra",
+            "Vidusjūra",
+            "Melnā jūra"
+        ],
+        "pareiza": "Nāves jūra"
+    },
+    {
+        "kategorija": "Ģeogrāfija",
+        "grutiba": "Grūts",
+        "jautajums": "Kura valsts ir pazīstama ar Sidneju?",
+        "atbildes": [
+            "Austrālija",
+            "Kanāda",
+            "Jaunzēlande",
+            "ASV"
+        ],
+        "pareiza": "Austrālija"
+    },
+    {
+        "kategorija": "Ģeogrāfija",
+        "grutiba": "Grūts",
+        "jautajums": "Kura upe tek caur vairākām Eiropas galvaspilsētām?",
+        "atbildes": [
+            "Donava",
+            "Daugava",
+            "Sēna",
+            "Temza"
+        ],
+        "pareiza": "Donava"
+    },
+    {
+        "kategorija": "Ģeogrāfija",
+        "grutiba": "Grūts",
+        "jautajums": "Kā sauc lielāko tuksnesi pasaulē?",
+        "atbildes": [
+            "Sahara",
+            "Gobi",
+            "Antarktīdas tuksnesis",
+            "Kalahari"
+        ],
+        "pareiza": "Antarktīdas tuksnesis"
+    },
+    {
+        "kategorija": "Sports",
+        "grutiba": "Viegls",
+        "jautajums": "Cik spēlētāju ir futbola komandā laukumā?",
+        "atbildes": [
+            "9",
+            "10",
+            "11",
+            "12"
+        ],
+        "pareiza": "11"
+    },
+    {
+        "kategorija": "Sports",
+        "grutiba": "Viegls",
+        "jautajums": "Kurš sporta veids izmanto raketi?",
+        "atbildes": [
+            "Teniss",
+            "Futbols",
+            "Hokejs",
+            "Peldēšana"
+        ],
+        "pareiza": "Teniss"
+    },
+    {
+        "kategorija": "Sports",
+        "grutiba": "Viegls",
+        "jautajums": "Kurā sportā met bumbu grozā?",
+        "atbildes": [
+            "Basketbols",
+            "Futbols",
+            "Volejbols",
+            "Hokejs"
+        ],
+        "pareiza": "Basketbols"
+    },
+    {
+        "kategorija": "Sports",
+        "grutiba": "Viegls",
+        "jautajums": "Kurā sportā izmanto ripu?",
+        "atbildes": [
+            "Hokejs",
+            "Teniss",
+            "Regbijs",
+            "Golfs"
+        ],
+        "pareiza": "Hokejs"
+    },
+    {
+        "kategorija": "Sports",
+        "grutiba": "Viegls",
+        "jautajums": "Kurā sportā peld baseinā?",
+        "atbildes": [
+            "Peldēšana",
+            "Skriešana",
+            "Slēpošana",
+            "Bokss"
+        ],
+        "pareiza": "Peldēšana"
+    },
+    {
+        "kategorija": "Sports",
+        "grutiba": "Viegls",
+        "jautajums": "Kurā sportā izmanto cimdus un ringu?",
+        "atbildes": [
+            "Bokss",
+            "Teniss",
+            "Šahs",
+            "Golfs"
+        ],
+        "pareiza": "Bokss"
+    },
+    {
+        "kategorija": "Sports",
+        "grutiba": "Viegls",
+        "jautajums": "Cik punktus basketbolā dod soda metiens?",
+        "atbildes": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        "pareiza": "1"
+    },
+    {
+        "kategorija": "Sports",
+        "grutiba": "Viegls",
+        "jautajums": "Kurš sporta veids notiek uz ledus?",
+        "atbildes": [
+            "Hokejs",
+            "Basketbols",
+            "Futbols",
+            "Teniss"
+        ],
+        "pareiza": "Hokejs"
+    },
+    {
+        "kategorija": "Sports",
+        "grutiba": "Viegls",
+        "jautajums": "Kurā sportā spēlē ar melnbaltu bumbu?",
+        "atbildes": [
+            "Futbols",
+            "Hokejs",
+            "Teniss",
+            "Golfs"
+        ],
+        "pareiza": "Futbols"
+    },
+    {
+        "kategorija": "Sports",
+        "grutiba": "Viegls",
+        "jautajums": "Kurā sportā izmanto vārtus un bumbu?",
+        "atbildes": [
+            "Futbols",
+            "Šahs",
+            "Peldēšana",
+            "Šaušana"
+        ],
+        "pareiza": "Futbols"
+    },
+    {
+        "kategorija": "Sports",
+        "grutiba": "Vidējs",
+        "jautajums": "Cik ilgs ir futbola spēles pamatlaiks?",
+        "atbildes": [
+            "60 min",
+            "70 min",
+            "90 min",
+            "120 min"
+        ],
+        "pareiza": "90 min"
+    },
+    {
+        "kategorija": "Sports",
+        "grutiba": "Vidējs",
+        "jautajums": "Cik spēlētāju basketbola komandā ir laukumā?",
+        "atbildes": [
+            "4",
+            "5",
+            "6",
+            "7"
+        ],
+        "pareiza": "5"
+    },
+    {
+        "kategorija": "Sports",
+        "grutiba": "Vidējs",
+        "jautajums": "Kurš sporta veids saistīts ar Tour de France?",
+        "atbildes": [
+            "Riteņbraukšana",
+            "Futbols",
+            "Hokejs",
+            "Teniss"
+        ],
+        "pareiza": "Riteņbraukšana"
+    },
+    {
+        "kategorija": "Sports",
+        "grutiba": "Vidējs",
+        "jautajums": "Kurā sportā izmanto terminu sets?",
+        "atbildes": [
+            "Teniss",
+            "Futbols",
+            "Hokejs",
+            "Bokss"
+        ],
+        "pareiza": "Teniss"
+    },
+    {
+        "kategorija": "Sports",
+        "grutiba": "Vidējs",
+        "jautajums": "Cik punktus basketbolā dod tālmetiens?",
+        "atbildes": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        "pareiza": "3"
+    },
+    {
+        "kategorija": "Sports",
+        "grutiba": "Vidējs",
+        "jautajums": "Kurā sportā ir 100 metru distance?",
+        "atbildes": [
+            "Vieglatlētika",
+            "Peldēšana",
+            "Hokejs",
+            "Šahs"
+        ],
+        "pareiza": "Vieglatlētika"
+    },
+    {
+        "kategorija": "Sports",
+        "grutiba": "Vidējs",
+        "jautajums": "Kurš sporta veids saistīts ar Vimbldonu?",
+        "atbildes": [
+            "Teniss",
+            "Futbols",
+            "Basketbols",
+            "Golfs"
+        ],
+        "pareiza": "Teniss"
+    },
+    {
+        "kategorija": "Sports",
+        "grutiba": "Vidējs",
+        "jautajums": "Kurā sportā izmanto terminu nokauts?",
+        "atbildes": [
+            "Bokss",
+            "Teniss",
+            "Slēpošana",
+            "Golfs"
+        ],
+        "pareiza": "Bokss"
+    },
+    {
+        "kategorija": "Sports",
+        "grutiba": "Vidējs",
+        "jautajums": "Kurā sportā izmanto ripu un nūju?",
+        "atbildes": [
+            "Hokejs",
+            "Golfs",
+            "Regbijs",
+            "Volejbols"
+        ],
+        "pareiza": "Hokejs"
+    },
+    {
+        "kategorija": "Sports",
+        "grutiba": "Vidējs",
+        "jautajums": "Kurā sportā spēlē ar nūjām zālē?",
+        "atbildes": [
+            "Florbols",
+            "Peldēšana",
+            "Bokss",
+            "Šahs"
+        ],
+        "pareiza": "Florbols"
+    },
+    {
+        "kategorija": "Sports",
+        "grutiba": "Grūts",
+        "jautajums": "Kurā gadā notika pirmās mūsdienu Olimpiskās spēles?",
+        "atbildes": [
+            "1896",
+            "1900",
+            "1912",
+            "1924"
+        ],
+        "pareiza": "1896"
+    },
+    {
+        "kategorija": "Sports",
+        "grutiba": "Grūts",
+        "jautajums": "Kurā valstī radās džudo?",
+        "atbildes": [
+            "Japāna",
+            "Ķīna",
+            "Koreja",
+            "Indija"
+        ],
+        "pareiza": "Japāna"
+    },
+    {
+        "kategorija": "Sports",
+        "grutiba": "Grūts",
+        "jautajums": "Cik raundi parasti ir čempiona boksa cīņā?",
+        "atbildes": [
+            "8",
+            "10",
+            "12",
+            "15"
+        ],
+        "pareiza": "12"
+    },
+    {
+        "kategorija": "Sports",
+        "grutiba": "Grūts",
+        "jautajums": "Kurš sporta veids saistīts ar terminu hat-trick?",
+        "atbildes": [
+            "Futbols",
+            "Peldēšana",
+            "Teniss",
+            "Golfs"
+        ],
+        "pareiza": "Futbols"
+    },
+    {
+        "kategorija": "Sports",
+        "grutiba": "Grūts",
+        "jautajums": "Kurā sportā izmanto terminu birdie?",
+        "atbildes": [
+            "Golfs",
+            "Hokejs",
+            "Futbols",
+            "Regbijs"
+        ],
+        "pareiza": "Golfs"
+    },
+    {
+        "kategorija": "Sports",
+        "grutiba": "Grūts",
+        "jautajums": "Kur radās futbols mūsdienu formā?",
+        "atbildes": [
+            "Anglija",
+            "Francija",
+            "Brazīlija",
+            "Vācija"
+        ],
+        "pareiza": "Anglija"
+    },
+    {
+        "kategorija": "Sports",
+        "grutiba": "Grūts",
+        "jautajums": "Cik spēlētāju ir volejbola komandā laukumā?",
+        "atbildes": [
+            "5",
+            "6",
+            "7",
+            "8"
+        ],
+        "pareiza": "6"
+    },
+    {
+        "kategorija": "Sports",
+        "grutiba": "Grūts",
+        "jautajums": "Kurā sportā trase var būt slaloms?",
+        "atbildes": [
+            "Kalnu slēpošana",
+            "Basketbols",
+            "Teniss",
+            "Bokss"
+        ],
+        "pareiza": "Kalnu slēpošana"
+    },
+    {
+        "kategorija": "Sports",
+        "grutiba": "Grūts",
+        "jautajums": "Kurš sporta veids saistīts ar Formulu 1?",
+        "atbildes": [
+            "Autosports",
+            "Hokejs",
+            "Šahs",
+            "Peldēšana"
+        ],
+        "pareiza": "Autosports"
+    },
+    {
+        "kategorija": "Sports",
+        "grutiba": "Grūts",
+        "jautajums": "Kurā sportā notiek Tour de France?",
+        "atbildes": [
+            "Riteņbraukšana",
+            "Autosports",
+            "Skriešana",
+            "Slēpošana"
+        ],
+        "pareiza": "Riteņbraukšana"
+    },
+    {
+        "kategorija": "Kultūra",
+        "grutiba": "Viegls",
+        "jautajums": "Kura valsts ir anime dzimtene?",
+        "atbildes": [
+            "Japāna",
+            "Francija",
+            "Itālija",
+            "Vācija"
+        ],
+        "pareiza": "Japāna"
+    },
+    {
+        "kategorija": "Kultūra",
+        "grutiba": "Viegls",
+        "jautajums": "Kas uzrakstīja Romeo un Džuljetu?",
+        "atbildes": [
+            "Šekspīrs",
+            "Rainis",
+            "Dante",
+            "Hemingvejs"
+        ],
+        "pareiza": "Šekspīrs"
+    },
+    {
+        "kategorija": "Kultūra",
+        "grutiba": "Viegls",
+        "jautajums": "Kā sauc Latvijas himnu?",
+        "atbildes": [
+            "Dievs, svētī Latviju!",
+            "Saule, Pērkons, Daugava",
+            "Pūt, vējiņi!",
+            "Mana dziesma"
+        ],
+        "pareiza": "Dievs, svētī Latviju!"
+    },
+    {
+        "kategorija": "Kultūra",
+        "grutiba": "Viegls",
+        "jautajums": "Kurā valstī radās pica?",
+        "atbildes": [
+            "Itālija",
+            "Spānija",
+            "Francija",
+            "Grieķija"
+        ],
+        "pareiza": "Itālija"
+    },
+    {
+        "kategorija": "Kultūra",
+        "grutiba": "Viegls",
+        "jautajums": "Kas ir muzejs?",
+        "atbildes": [
+            "Vieta priekšmetu apskatei",
+            "Sporta zāle",
+            "Veikals",
+            "Autoosta"
+        ],
+        "pareiza": "Vieta priekšmetu apskatei"
+    },
+    {
+        "kategorija": "Kultūra",
+        "grutiba": "Viegls",
+        "jautajums": "Kā sauc cilvēku, kurš raksta grāmatas?",
+        "atbildes": [
+            "Rakstnieks",
+            "Pavārs",
+            "Ārsts",
+            "Sportists"
+        ],
+        "pareiza": "Rakstnieks"
+    },
+    {
+        "kategorija": "Kultūra",
+        "grutiba": "Viegls",
+        "jautajums": "Kā sauc cilvēku, kurš glezno?",
+        "atbildes": [
+            "Gleznotājs",
+            "Programmētājs",
+            "Pilots",
+            "Mehāniķis"
+        ],
+        "pareiza": "Gleznotājs"
+    },
+    {
+        "kategorija": "Kultūra",
+        "grutiba": "Viegls",
+        "jautajums": "Kura māksla ir saistīta ar skaņām?",
+        "atbildes": [
+            "Mūzika",
+            "Glezniecība",
+            "Tēlniecība",
+            "Arhitektūra"
+        ],
+        "pareiza": "Mūzika"
+    },
+    {
+        "kategorija": "Kultūra",
+        "grutiba": "Viegls",
+        "jautajums": "Kurš instruments ir ar taustiņiem?",
+        "atbildes": [
+            "Klavieres",
+            "Bungas",
+            "Ģitāra",
+            "Flauta"
+        ],
+        "pareiza": "Klavieres"
+    },
+    {
+        "kategorija": "Kultūra",
+        "grutiba": "Viegls",
+        "jautajums": "Kas ir teātris?",
+        "atbildes": [
+            "Skatuves mākslas vieta",
+            "Slimnīca",
+            "Skola",
+            "Stacija"
+        ],
+        "pareiza": "Skatuves mākslas vieta"
+    },
+    {
+        "kategorija": "Kultūra",
+        "grutiba": "Vidējs",
+        "jautajums": "Kas ir opera?",
+        "atbildes": [
+            "Muzikāli dramatisks darbs",
+            "Sporta spēle",
+            "Datorspēle",
+            "Glezna"
+        ],
+        "pareiza": "Muzikāli dramatisks darbs"
+    },
+    {
+        "kategorija": "Kultūra",
+        "grutiba": "Vidējs",
+        "jautajums": "Kurš komponists radīja Mēness sonāti?",
+        "atbildes": [
+            "Bēthovens",
+            "Bahs",
+            "Mocarts",
+            "Vivaldi"
+        ],
+        "pareiza": "Bēthovens"
+    },
+    {
+        "kategorija": "Kultūra",
+        "grutiba": "Vidējs",
+        "jautajums": "Kura valsts slavena ar flamenko?",
+        "atbildes": [
+            "Spānija",
+            "Latvija",
+            "Somija",
+            "Īrija"
+        ],
+        "pareiza": "Spānija"
+    },
+    {
+        "kategorija": "Kultūra",
+        "grutiba": "Vidējs",
+        "jautajums": "Kurā valstī radās manga?",
+        "atbildes": [
+            "Japāna",
+            "ASV",
+            "Itālija",
+            "Zviedrija"
+        ],
+        "pareiza": "Japāna"
+    },
+    {
+        "kategorija": "Kultūra",
+        "grutiba": "Vidējs",
+        "jautajums": "Kas ir balets?",
+        "atbildes": [
+            "Dejas mākslas forma",
+            "Dators",
+            "Grāmata",
+            "Sporta veids"
+        ],
+        "pareiza": "Dejas mākslas forma"
+    },
+    {
+        "kategorija": "Kultūra",
+        "grutiba": "Vidējs",
+        "jautajums": "Kā sauc cilvēku, kurš vada orķestri?",
+        "atbildes": [
+            "Diriģents",
+            "Aktieris",
+            "Rakstnieks",
+            "Tēlnieks"
+        ],
+        "pareiza": "Diriģents"
+    },
+    {
+        "kategorija": "Kultūra",
+        "grutiba": "Vidējs",
+        "jautajums": "Kas ir arhitektūra?",
+        "atbildes": [
+            "Ēku projektēšanas māksla",
+            "Dziedāšana",
+            "Sportošana",
+            "Fotografēšana"
+        ],
+        "pareiza": "Ēku projektēšanas māksla"
+    },
+    {
+        "kategorija": "Kultūra",
+        "grutiba": "Vidējs",
+        "jautajums": "Kura pilsēta ir renesanses centrs Itālijā?",
+        "atbildes": [
+            "Florence",
+            "Rīga",
+            "Oslo",
+            "Dublina"
+        ],
+        "pareiza": "Florence"
+    },
+    {
+        "kategorija": "Kultūra",
+        "grutiba": "Vidējs",
+        "jautajums": "Kā sauc lielu mākslas darbu izstādi?",
+        "atbildes": [
+            "Izstāde",
+            "Sacensības",
+            "Lekcija",
+            "Treniņš"
+        ],
+        "pareiza": "Izstāde"
+    },
+    {
+        "kategorija": "Kultūra",
+        "grutiba": "Vidējs",
+        "jautajums": "Kurš latviešu dzejnieks ir Rainis?",
+        "atbildes": [
+            "Dzejnieks",
+            "Pavārs",
+            "Sportists",
+            "Mediķis"
+        ],
+        "pareiza": "Dzejnieks"
+    },
+    {
+        "kategorija": "Kultūra",
+        "grutiba": "Grūts",
+        "jautajums": "Kurš uzgleznoja Mona Lisa?",
+        "atbildes": [
+            "Leonardo da Vinči",
+            "Pikaso",
+            "Van Gogs",
+            "Mikelandželo"
+        ],
+        "pareiza": "Leonardo da Vinči"
+    },
+    {
+        "kategorija": "Kultūra",
+        "grutiba": "Grūts",
+        "jautajums": "Kura civilizācija uzcēla Kolizeju?",
+        "atbildes": [
+            "Romieši",
+            "Vikingi",
+            "Maiji",
+            "Ķīnieši"
+        ],
+        "pareiza": "Romieši"
+    },
+    {
+        "kategorija": "Kultūra",
+        "grutiba": "Grūts",
+        "jautajums": "Kurš komponists sarakstīja Četrus gadalaikus?",
+        "atbildes": [
+            "Vivaldi",
+            "Bahs",
+            "Bēthovens",
+            "Šopēns"
+        ],
+        "pareiza": "Vivaldi"
+    },
+    {
+        "kategorija": "Kultūra",
+        "grutiba": "Grūts",
+        "jautajums": "Kura valsts ir pazīstama ar samuraju kultūru?",
+        "atbildes": [
+            "Japāna",
+            "Ķīna",
+            "Koreja",
+            "Indija"
+        ],
+        "pareiza": "Japāna"
+    },
+    {
+        "kategorija": "Kultūra",
+        "grutiba": "Grūts",
+        "jautajums": "Kā sauc sengrieķu akropoles slaveno templi?",
+        "atbildes": [
+            "Partenons",
+            "Kolizejs",
+            "Panteons",
+            "Sfinksa"
+        ],
+        "pareiza": "Partenons"
+    },
+    {
+        "kategorija": "Kultūra",
+        "grutiba": "Grūts",
+        "jautajums": "Kurš mākslinieks saistīts ar kubismu?",
+        "atbildes": [
+            "Pikaso",
+            "Monē",
+            "Rembrants",
+            "Rafaēls"
+        ],
+        "pareiza": "Pikaso"
+    },
+    {
+        "kategorija": "Kultūra",
+        "grutiba": "Grūts",
+        "jautajums": "Kura valsts slavena ar Riodežaneiro karnevālu?",
+        "atbildes": [
+            "Brazīlija",
+            "Francija",
+            "Vācija",
+            "Latvija"
+        ],
+        "pareiza": "Brazīlija"
+    },
+    {
+        "kategorija": "Kultūra",
+        "grutiba": "Grūts",
+        "jautajums": "Kā sauc japāņu dzejas formu ar 17 zilbēm?",
+        "atbildes": [
+            "Haiku",
+            "Sonets",
+            "Eposs",
+            "Balāde"
+        ],
+        "pareiza": "Haiku"
+    },
+    {
+        "kategorija": "Kultūra",
+        "grutiba": "Grūts",
+        "jautajums": "Kurš literatūras žanrs apraksta varoņu piedzīvojumus?",
+        "atbildes": [
+            "Eposs",
+            "Recepte",
+            "Instrukcija",
+            "Sludinājums"
+        ],
+        "pareiza": "Eposs"
+    },
+    {
+        "kategorija": "Kultūra",
+        "grutiba": "Grūts",
+        "jautajums": "Kurš latviešu komponists ir Dziesmu svētku simbols?",
+        "atbildes": [
+            "Jāzeps Vītols",
+            "Bēthovens",
+            "Mocarts",
+            "Vivaldi"
+        ],
+        "pareiza": "Jāzeps Vītols"
+    }
+]
