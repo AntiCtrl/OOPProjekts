@@ -72,6 +72,12 @@ KategorijuPogas = [
     Poga(515, 380, 210, 60, "Matemātika")
 ]
 
+GrutibasPogas = [
+    Poga(160, 290, 200, 60, "Viegls"),
+    Poga(390, 290, 200, 60, "Vidējs"),
+    Poga(620, 290, 200, 60, "Grūts")
+]
+
 # Teksta ievades lauks
 TekstaLauks = pygame.Rect(300, 320, 400, 60)
 
@@ -83,6 +89,9 @@ Bridinajums = ""
 
 # Glabā spēlētāja izvēlēto kategoriju
 IzveletaKategorija = ""
+
+# Glabā spēlētāja izvēlēto grūtības līmeni
+IzveletaGrutiba = ""
 
 Ekrans = "sakums"
 Darbojas = True # mainīgais, kas kontrolē programmas darbību
@@ -171,6 +180,42 @@ def ParaditKategorijasLogu():
 
     AtpakalPoga.Paradit(Logs, Fonts)
 
+# Parāda grūtības līmeņa izvēles logu
+def ParaditGrutibasLogu():
+    Logs.blit(Fons, (0, 0))
+    Logs.blit(Karte, (100, 150))
+
+    Virsraksts = Fonts.render("Izvēlies grūtības līmeni", True, pygame.Color("#000000"))
+    VirsrakstaVieta = Virsraksts.get_rect(center=(Platums // 2, 230))
+    Logs.blit(Virsraksts, VirsrakstaVieta)
+
+    for poga in GrutibasPogas:
+        poga.Paradit(Logs, Fonts)
+
+    AtpakalPoga.Paradit(Logs, Fonts)
+
+# Pagaidu spēles logs
+def ParaditSpelesLogu():
+    Logs.blit(Fons, (0, 0))
+    Logs.blit(Karte, (100, 150))
+
+    Virsraksts = Fonts.render("Spēles logs", True, pygame.Color("#000000"))
+    VirsrakstaVieta = Virsraksts.get_rect(center=(Platums // 2, 210))
+    Logs.blit(Virsraksts, VirsrakstaVieta)
+
+    Teksts1 = MazsFonts.render("Spēlētājs: " + SpeletajaVards, True, pygame.Color("#000000"))
+    Logs.blit(Teksts1, (260, 270))
+
+    Teksts2 = MazsFonts.render("Kategorija: " + IzveletaKategorija, True, pygame.Color("#000000"))
+    Logs.blit(Teksts2, (260, 305))
+
+    Teksts3 = MazsFonts.render("Grūtības līmenis: " + IzveletaGrutiba, True, pygame.Color("#000000"))
+    Logs.blit(Teksts3, (260, 340))
+
+    Teksts4 = MazsFonts.render("Šeit vēlāk sāksies jautājumi.", True, pygame.Color("#000000"))
+    Logs.blit(Teksts4, (260, 390))
+
+    AtpakalPoga.Paradit(Logs, Fonts)
 
 while (Darbojas == True):
 
@@ -231,8 +276,26 @@ while (Darbojas == True):
                         IzveletaKategorija = poga.Teksts
                         print("Izvēlētā kategorija:", IzveletaKategorija)
 
-                        # Nākamais ekrāns būs grūtības izvēle
+                        # Pēc kategorijas izvēles pāriet uz grūtības izvēli
                         Ekrans = "grutiba"
+
+            elif Ekrans == "grutiba":
+
+                if AtpakalPoga.VaiNospiesta(Pozicija):
+                    Ekrans = "kategorija"
+
+                for poga in GrutibasPogas:
+                    if poga.VaiNospiesta(Pozicija):
+                        IzveletaGrutiba = poga.Teksts
+                        print("Izvēlētā grūtība:", IzveletaGrutiba)
+
+                        # Vēlāk šeit sāksies pati spēle
+                        Ekrans = "spele"
+
+            elif Ekrans == "spele":
+
+                if AtpakalPoga.VaiNospiesta(Pozicija):
+                    Ekrans = "grutiba"
 
         # Lietotājs ievada tekstu ar klaviatūru
         if Event.type == pygame.KEYDOWN:
@@ -274,6 +337,12 @@ while (Darbojas == True):
     
     elif Ekrans == "kategorija":
         ParaditKategorijasLogu()
+    
+    elif Ekrans == "grutiba":
+        ParaditGrutibasLogu()
+    
+    elif Ekrans == "spele":
+        ParaditSpelesLogu()
     
     # Atjauno ekrāna attēlu
     pygame.display.update()
