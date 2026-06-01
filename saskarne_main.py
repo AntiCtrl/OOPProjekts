@@ -1,9 +1,6 @@
 import pygame
 
-# === Ekrans =========================================
-
 # === Poga =========================================
-
 class Poga:
 
     # Konstruktors -  izveido jaunu pogu ar norādīto pozīciju, izmēru un tekstu
@@ -89,7 +86,7 @@ def ParaditInstrukcijuLogu():
 
     Instrukcija = [
         "1. Ievadi savu vārdu.",
-        "2. Izvēlies grūtības līmeni un jautājumu kategoriju.",
+        "2. Izvēlies jautājumu kategoriju un grūtības līmeni.",
         "3. Atbildi uz 10 jautājumiem, katram izvēloties vienu no 4 atbilžu variantiem.",
         "4. Par katru pareizu atbildi iegūsi 10 punktus.",
         "5. Par katru nepareizu atbildi zaudēsi 5 punktus.",

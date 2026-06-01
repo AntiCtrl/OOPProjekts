@@ -1,13 +1,15 @@
 class Kategorija:
 
-    # Konstruktors
-    def __init__(self, nosaukums=""):
+    def __init__(self, id=0, nosaukums="", apraksts=""):
+        self.__Id = id
         self.__Nosaukums = nosaukums
+        self.__Apraksts = apraksts
 
-    # Uzstāda kategorijas nosaukumu
-    def SetNosaukums(self, nosaukums):
-        self.__Nosaukums = nosaukums
+    def GetId(self):
+        return self.__Id
 
-    # Atgriež kategorijas nosaukumu
     def GetNosaukums(self):
         return self.__Nosaukums
+
+    def GetApraksts(self):
+        return self.__Apraksts
