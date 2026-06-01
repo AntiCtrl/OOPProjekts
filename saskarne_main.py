@@ -78,6 +78,13 @@ GrutibasPogas = [
     Poga(620, 290, 200, 60, "Grūts")
 ]
 
+AtbilzuPogas = [
+    Poga(230, 380, 240, 55, "Rīga"),
+    Poga(530, 380, 240, 55, "Liepāja"),
+    Poga(230, 455, 240, 55, "Ventspils"),
+    Poga(530, 455, 240, 55, "Daugavpils")
+]
+
 # Teksta ievades lauks
 TekstaLauks = pygame.Rect(300, 320, 400, 60)
 
@@ -160,7 +167,7 @@ def ParaditVardaIevadi():
     # Ja ir kļūda ievadē, parāda brīdinājumu
     if Bridinajums != "":
         BridTeksts = MazsFonts.render(Bridinajums, True, pygame.Color("#FF0000"))
-        Logs.blit(BridTeksts, (285, 395))
+        Logs.blit(BridTeksts, (300, 395))
 
     AtpakalPoga.Paradit(Logs, Fonts)
     TurpinatPoga.Paradit(Logs, Fonts)
@@ -194,26 +201,41 @@ def ParaditGrutibasLogu():
 
     AtpakalPoga.Paradit(Logs, Fonts)
 
-# Pagaidu spēles logs
+# Parāda spēles logu
 def ParaditSpelesLogu():
     Logs.blit(Fons, (0, 0))
     Logs.blit(Karte, (100, 150))
 
-    Virsraksts = Fonts.render("Spēles logs", True, pygame.Color("#000000"))
-    VirsrakstaVieta = Virsraksts.get_rect(center=(Platums // 2, 210))
-    Logs.blit(Virsraksts, VirsrakstaVieta)
+    # Augšējā informācija
+    Info1 = MazsFonts.render("Spēlētājs: " + SpeletajaVards, True, pygame.Color("#000000"))
+    Logs.blit(Info1, (180, 190))
 
-    Teksts1 = MazsFonts.render("Spēlētājs: " + SpeletajaVards, True, pygame.Color("#000000"))
-    Logs.blit(Teksts1, (260, 270))
+    Info2 = MazsFonts.render("Punkti: 0", True, pygame.Color("#000000"))
+    Logs.blit(Info2, (680, 190))
 
-    Teksts2 = MazsFonts.render("Kategorija: " + IzveletaKategorija, True, pygame.Color("#000000"))
-    Logs.blit(Teksts2, (260, 305))
+    Info3 = MazsFonts.render("Kategorija: " + IzveletaKategorija, True, pygame.Color("#000000"))
+    Logs.blit(Info3, (180, 220))
 
-    Teksts3 = MazsFonts.render("Grūtības līmenis: " + IzveletaGrutiba, True, pygame.Color("#000000"))
-    Logs.blit(Teksts3, (260, 340))
+    Info4 = MazsFonts.render("Grūtība: " + IzveletaGrutiba, True, pygame.Color("#000000"))
+    Logs.blit(Info4, (680, 220))
 
-    Teksts4 = MazsFonts.render("Šeit vēlāk sāksies jautājumi.", True, pygame.Color("#000000"))
-    Logs.blit(Teksts4, (260, 390))
+    # Jautājuma numurs
+    JautajumaNr = Fonts.render("Jautājums 1/10", True, pygame.Color("#000000"))
+    JautajumaNrVieta = JautajumaNr.get_rect(center=(Platums // 2, 270))
+    Logs.blit(JautajumaNr, JautajumaNrVieta)
+
+    # Pagaidu jautājums
+    Jautajums = MazsFonts.render(
+        "Kāda ir Latvijas galvaspilsēta?",
+        True,
+        pygame.Color("#000000")
+    )
+    JautajumaVieta = Jautajums.get_rect(center=(Platums // 2, 330))
+    Logs.blit(Jautajums, JautajumaVieta)
+
+    # Atbilžu pogas
+    for poga in AtbilzuPogas:
+        poga.Paradit(Logs, MazsFonts)
 
     AtpakalPoga.Paradit(Logs, Fonts)
 
@@ -296,6 +318,10 @@ while (Darbojas == True):
 
                 if AtpakalPoga.VaiNospiesta(Pozicija):
                     Ekrans = "grutiba"
+
+                for poga in AtbilzuPogas:
+                    if poga.VaiNospiesta(Pozicija):
+                        print("Izvēlētā atbilde:", poga.Teksts)
 
         # Lietotājs ievada tekstu ar klaviatūru
         if Event.type == pygame.KEYDOWN:
