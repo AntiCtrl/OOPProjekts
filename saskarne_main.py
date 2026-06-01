@@ -272,7 +272,50 @@ def ParaditRezultatuLogu():
     RezultataVieta = RezultataTeksts.get_rect(center=(Platums // 2, 480))
     Logs.blit(RezultataTeksts, RezultataVieta)
 
-    IzvelnePoga.Paradit(Logs, MazsFonts)
+    IzvelnePoga.Paradit(Logs, Fonts)
+
+# Parāda visu spēlētāju rezultātu tabulu
+def ParaditRezultatuTabulu():
+
+    Logs.blit(Fons, (0, 0))
+    Logs.blit(Karte, (100, 150))
+
+    Virsraksts = Fonts.render("REZULTĀTI", True, pygame.Color("#000000"))
+    VirsrakstaVieta = Virsraksts.get_rect(center=(Platums // 2, 230))
+    Logs.blit(Virsraksts, VirsrakstaVieta)
+
+    # Kolonnu X koordinātas
+    xVards = 230
+    xPunkti = 390
+    xPareizi = 520
+    xKludas = 660
+
+    y = 260
+
+    # Tabulas virsraksti
+    Logs.blit(MazsFonts.render("Vārds", True, pygame.Color("#000000")), (xVards, y))
+    Logs.blit(MazsFonts.render("Punkti", True, pygame.Color("#000000")), (xPunkti, y))
+    Logs.blit(MazsFonts.render("Pareizi", True, pygame.Color("#000000")), (xPareizi, y))
+    Logs.blit(MazsFonts.render("Kļūdas", True, pygame.Color("#000000")), (xKludas, y))
+
+    # Pagaidu dati
+    Rezultati = [
+        ["Artjoms", "75", "8", "2"],
+        ["Gabriels", "90", "9", "1"],
+        ["Anna", "40", "5", "5"]
+    ]
+
+    y = 310
+
+    for rezultats in Rezultati:
+        Logs.blit(MazsFonts.render(rezultats[0], True, pygame.Color("#000000")), (xVards, y))
+        Logs.blit(MazsFonts.render(rezultats[1], True, pygame.Color("#000000")), (xPunkti, y))
+        Logs.blit(MazsFonts.render(rezultats[2], True, pygame.Color("#000000")), (xPareizi, y))
+        Logs.blit(MazsFonts.render(rezultats[3], True, pygame.Color("#000000")), (xKludas, y))
+
+        y += 40
+
+    AtpakalPoga.Paradit(Logs, Fonts)
 
 while (Darbojas == True):
 
@@ -293,6 +336,9 @@ while (Darbojas == True):
 
                         if poga.Teksts == "Spēlēt":
                             Ekrans = "vards"
+                        
+                        if poga.Teksts == "Rezultāti":
+                            Ekrans = "rezultatu_tabula"
 
                         if poga.Teksts == "Spēles noteikumi":
                             Ekrans = "instrukcija"
@@ -366,6 +412,11 @@ while (Darbojas == True):
                 if IzvelnePoga.VaiNospiesta(Pozicija):
                     Ekrans = "sakums"
 
+            elif Ekrans == "rezultatu_tabula":
+
+                if AtpakalPoga.VaiNospiesta(Pozicija):
+                    Ekrans = "sakums"
+
         # Lietotājs ievada tekstu ar klaviatūru
         if Event.type == pygame.KEYDOWN:
 
@@ -415,6 +466,9 @@ while (Darbojas == True):
     
     elif Ekrans == "rezultats":
         ParaditRezultatuLogu()
+
+    elif Ekrans == "rezultatu_tabula":
+        ParaditRezultatuTabulu()
     
     # Atjauno ekrāna attēlu
     pygame.display.update()
