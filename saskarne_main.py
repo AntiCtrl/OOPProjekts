@@ -63,6 +63,15 @@ Pogas = [
 AtpakalPoga = Poga(40, 550, 170, 55, "Atpakaļ")
 TurpinatPoga = Poga(790, 550, 170, 55, "Turpināt")
 
+KategorijuPogas = [
+    Poga(160, 280, 210, 60, "Kultūra"),
+    Poga(390, 280, 210, 60, "Vēsture"),
+    Poga(620, 280, 210, 60, "Sports"),
+
+    Poga(265, 380, 210, 60, "Ģeogrāfija"),
+    Poga(515, 380, 210, 60, "Matemātika")
+]
+
 # Teksta ievades lauks
 TekstaLauks = pygame.Rect(300, 320, 400, 60)
 
@@ -71,6 +80,9 @@ SpeletajaVards = ""
 
 # Šeit glabājas brīdinājuma teksts, ja ievade nav pareiza
 Bridinajums = ""
+
+# Glabā spēlētāja izvēlēto kategoriju
+IzveletaKategorija = ""
 
 Ekrans = "sakums"
 Darbojas = True # mainīgais, kas kontrolē programmas darbību
@@ -144,13 +156,18 @@ def ParaditVardaIevadi():
     AtpakalPoga.Paradit(Logs, Fonts)
     TurpinatPoga.Paradit(Logs, Fonts)
 
-# Pagaidu logs kategorijas izvēlei
+# Parāda kategorijas izvēles logu
 def ParaditKategorijasLogu():
     Logs.blit(Fons, (0, 0))
     Logs.blit(Karte, (100, 150))
 
-    Teksts = Fonts.render("Šeit būs kategorijas izvēle", True, pygame.Color("#000000"))
-    Logs.blit(Teksts, (260, 280))
+    Virsraksts = Fonts.render("Izvēlies kategoriju", True, pygame.Color("#000000"))
+    VirsrakstaVieta = Virsraksts.get_rect(center=(Platums // 2, 230))
+
+    Logs.blit(Virsraksts, VirsrakstaVieta)
+
+    for poga in KategorijuPogas:
+        poga.Paradit(Logs, Fonts)
 
     AtpakalPoga.Paradit(Logs, Fonts)
 
@@ -208,6 +225,14 @@ while (Darbojas == True):
 
                 if AtpakalPoga.VaiNospiesta(Pozicija):
                     Ekrans = "vards"
+
+                for poga in KategorijuPogas:
+                    if poga.VaiNospiesta(Pozicija):
+                        IzveletaKategorija = poga.Teksts
+                        print("Izvēlētā kategorija:", IzveletaKategorija)
+
+                        # Nākamais ekrāns būs grūtības izvēle
+                        Ekrans = "grutiba"
 
         # Lietotājs ievada tekstu ar klaviatūru
         if Event.type == pygame.KEYDOWN:
