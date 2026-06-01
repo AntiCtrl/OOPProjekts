@@ -85,6 +85,8 @@ AtbilzuPogas = [
     Poga(530, 455, 240, 55, "Daugavpils")
 ]
 
+IzvelnePoga = Poga(650, 550, 300, 55, "Atgriezties izvēlnē")
+
 # Teksta ievades lauks
 TekstaLauks = pygame.Rect(300, 320, 400, 60)
 
@@ -239,6 +241,39 @@ def ParaditSpelesLogu():
 
     AtpakalPoga.Paradit(Logs, Fonts)
 
+# Parāda spēles rezultātu logu
+def ParaditRezultatuLogu():
+    Logs.blit(Fons, (0, 0))
+    Logs.blit(Karte, (100, 150))
+
+    Virsraksts = Fonts.render("SPĒLES REZULTĀTS", True, pygame.Color("#000000"))
+    VirsrakstaVieta = Virsraksts.get_rect(center=(Platums // 2, 230))
+    Logs.blit(Virsraksts, VirsrakstaVieta)
+
+    Teksts1 = MazsFonts.render("Spēlētājs: " + SpeletajaVards, True, pygame.Color("#000000"))
+    Logs.blit(Teksts1, (400, 260))
+
+    Teksts2 = MazsFonts.render("Kategorija: " + IzveletaKategorija, True, pygame.Color("#000000"))
+    Logs.blit(Teksts2, (400, 290))
+
+    Teksts3 = MazsFonts.render("Grūtība: " + IzveletaGrutiba, True, pygame.Color("#000000"))
+    Logs.blit(Teksts3, (400, 320))
+
+    Teksts4 = MazsFonts.render("Punkti: 75", True, pygame.Color("#000000"))
+    Logs.blit(Teksts4, (400, 365))
+
+    Teksts5 = MazsFonts.render("Pareizas atbildes: 8", True, pygame.Color("#000000"))
+    Logs.blit(Teksts5, (400, 395))
+
+    Teksts6 = MazsFonts.render("Kļūdas: 2", True, pygame.Color("#000000"))
+    Logs.blit(Teksts6, (400, 425))
+
+    RezultataTeksts = MazsFonts.render( "Tu biji tuvu tam, lai atrastu dārgumu!", True, pygame.Color("#000000"))
+    RezultataVieta = RezultataTeksts.get_rect(center=(Platums // 2, 480))
+    Logs.blit(RezultataTeksts, RezultataVieta)
+
+    IzvelnePoga.Paradit(Logs, MazsFonts)
+
 while (Darbojas == True):
 
     for Event in pygame.event.get():
@@ -323,6 +358,14 @@ while (Darbojas == True):
                     if poga.VaiNospiesta(Pozicija):
                         print("Izvēlētā atbilde:", poga.Teksts)
 
+                        # Pagaidām pēc atbildes parāda rezultātu logu
+                        Ekrans = "rezultats"
+
+            elif Ekrans == "rezultats":
+
+                if IzvelnePoga.VaiNospiesta(Pozicija):
+                    Ekrans = "sakums"
+
         # Lietotājs ievada tekstu ar klaviatūru
         if Event.type == pygame.KEYDOWN:
 
@@ -369,6 +412,9 @@ while (Darbojas == True):
     
     elif Ekrans == "spele":
         ParaditSpelesLogu()
+    
+    elif Ekrans == "rezultats":
+        ParaditRezultatuLogu()
     
     # Atjauno ekrāna attēlu
     pygame.display.update()
