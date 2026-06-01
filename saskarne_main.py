@@ -61,6 +61,16 @@ Pogas = [
 ]
 
 AtpakalPoga = Poga(40, 550, 170, 55, "Atpakaļ")
+TurpinatPoga = Poga(790, 550, 170, 55, "Turpināt")
+
+# Teksta ievades lauks
+TekstaLauks = pygame.Rect(300, 320, 400, 60)
+
+# Šeit glabāsies spēlētāja ievadītais vārds
+SpeletajaVards = ""
+
+# Šeit glabājas brīdinājuma teksts, ja ievade nav pareiza
+Bridinajums = ""
 
 Ekrans = "sakums"
 Darbojas = True # mainīgais, kas kontrolē programmas darbību
@@ -107,6 +117,44 @@ def ParaditInstrukcijuLogu():
     AtpakalPoga.Paradit(Logs, Fonts)
 
 
+# Parāda vārda ievades logu
+def ParaditVardaIevadi():
+    Logs.blit(Fons, (0, 0))
+
+    # Parāda karti kā fonu ievades logam
+    Logs.blit(Karte, (100, 150))
+
+    Virsraksts = Fonts.render("Ievadi savu vārdu:", True, pygame.Color("#000000"))
+    VirsrakstaVieta = Virsraksts.get_rect(center=(Platums // 2, 250))
+    Logs.blit(Virsraksts, VirsrakstaVieta)
+
+    # Uzzīmē teksta ievades lauku
+    pygame.draw.rect(Logs, pygame.Color("#FFF4C7"), TekstaLauks, border_radius=10)
+    pygame.draw.rect(Logs, pygame.Color("#74C214"), TekstaLauks, width=3, border_radius=10)
+
+    # Parāda lietotāja ievadīto tekstu
+    Teksts = Fonts.render(SpeletajaVards, True, pygame.Color("#000000"))
+    Logs.blit(Teksts, (TekstaLauks.x + 15, TekstaLauks.y + 10))
+    
+    # Ja ir kļūda ievadē, parāda brīdinājumu
+    if Bridinajums != "":
+        BridTeksts = MazsFonts.render(Bridinajums, True, pygame.Color("#FF0000"))
+        Logs.blit(BridTeksts, (285, 395))
+
+    AtpakalPoga.Paradit(Logs, Fonts)
+    TurpinatPoga.Paradit(Logs, Fonts)
+
+# Pagaidu logs kategorijas izvēlei
+def ParaditKategorijasLogu():
+    Logs.blit(Fons, (0, 0))
+    Logs.blit(Karte, (100, 150))
+
+    Teksts = Fonts.render("Šeit būs kategorijas izvēle", True, pygame.Color("#000000"))
+    Logs.blit(Teksts, (260, 280))
+
+    AtpakalPoga.Paradit(Logs, Fonts)
+
+
 while (Darbojas == True):
 
     for Event in pygame.event.get():
@@ -124,6 +172,9 @@ while (Darbojas == True):
                     if poga.VaiNospiesta(Pozicija):
                         print("Nospiesta poga:", poga.Teksts)
 
+                        if poga.Teksts == "Spēlēt":
+                            Ekrans = "vards"
+
                         if poga.Teksts == "Spēles noteikumi":
                             Ekrans = "instrukcija"
 
@@ -135,11 +186,69 @@ while (Darbojas == True):
                 if AtpakalPoga.VaiNospiesta(Pozicija):
                     Ekrans = "sakums"
 
+            elif Ekrans == "vards":
+
+                if AtpakalPoga.VaiNospiesta(Pozicija):
+                    Ekrans = "sakums"
+
+                if TurpinatPoga.VaiNospiesta(Pozicija):
+
+                    if SpeletajaVards == "":
+                        Bridinajums = "Lūdzu, ievadiet savu vārdu!"
+
+                    elif len(SpeletajaVards) > 20:
+                        Bridinajums = "Vārds nedrīkst būt garāks par 20 simboliem!"
+
+                    else:
+                        Bridinajums = ""
+                        print("Spēlētāja vārds:", SpeletajaVards)
+                        Ekrans = "kategorija"
+
+            elif Ekrans == "kategorija":
+
+                if AtpakalPoga.VaiNospiesta(Pozicija):
+                    Ekrans = "vards"
+
+        # Lietotājs ievada tekstu ar klaviatūru
+        if Event.type == pygame.KEYDOWN:
+
+            if Ekrans == "vards":
+
+                # Backspace dzēš pēdējo simbolu
+                if Event.key == pygame.K_BACKSPACE:
+                    SpeletajaVards = SpeletajaVards[:-1]
+                    Bridinajums = ""
+
+                # Enter darbojas tāpat kā poga Turpināt
+                elif Event.key == pygame.K_RETURN:
+
+                    if SpeletajaVards == "":
+                        Bridinajums = "Lūdzu, ievadiet savu vārdu!"
+
+                    elif len(SpeletajaVards) > 20:
+                        Bridinajums = "Vārds nedrīkst būt garāks par 20 simboliem!"
+
+                    else:
+                        Bridinajums = ""
+                        print("Spēlētāja vārds:", SpeletajaVards)
+                        Ekrans = "kategorija"
+
+                else:
+                    SpeletajaVards += Event.unicode
+                    Bridinajums = ""
+
+
     if Ekrans == "sakums":
         ParaditSakumaEkranu()
 
     elif Ekrans == "instrukcija":
         ParaditInstrukcijuLogu()
+
+    elif Ekrans == "vards":
+        ParaditVardaIevadi()
+    
+    elif Ekrans == "kategorija":
+        ParaditKategorijasLogu()
     
     # Atjauno ekrāna attēlu
     pygame.display.update()
