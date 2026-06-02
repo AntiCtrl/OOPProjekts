@@ -1,3 +1,4 @@
+# Klase glabā informāciju par spēlētāju un viņa spēles rezultātiem
 class Speletajs:
 
     # Konstruktors

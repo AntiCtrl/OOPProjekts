@@ -1,4 +1,5 @@
 import pygame
+from spele import Spele
 
 # === Poga =========================================
 class Poga:
@@ -26,7 +27,7 @@ class Poga:
 
         Teksts = Fonts.render(self.Teksts, True, (0, 0, 0))
         TekstaVieta = Teksts.get_rect(center=self.Taisnsturis.center)
-        Logs.blit(Teksts, TekstaVieta)
+        Logs.blit(Teksts, TekstaVieta) # blit() kopē attēlu vai tekstu uz spēles logu noteiktā pozīcijā.
 
     # Pārbauda, vai poga ir nospiesta
     def VaiNospiesta(self, Pozicija):
@@ -36,6 +37,7 @@ class Poga:
 # === Saskarne =====================================
 
 pygame.init()
+SpelesObjekts = Spele()
 
 Platums = 1000
 Augstums = 650
@@ -203,41 +205,48 @@ def ParaditGrutibasLogu():
 
     AtpakalPoga.Paradit(Logs, Fonts)
 
+
 # Parāda spēles logu
 def ParaditSpelesLogu():
     Logs.blit(Fons, (0, 0))
     Logs.blit(Karte, (100, 150))
 
+    Speletajs = SpelesObjekts.GetSpeletajs()
+
     # Augšējā informācija
-    Info1 = MazsFonts.render("Spēlētājs: " + SpeletajaVards, True, pygame.Color("#000000"))
+    Info1 = MazsFonts.render("Spēlētājs: " + Speletajs.GetVards(), True, pygame.Color("#000000"))
     Logs.blit(Info1, (180, 190))
 
-    Info2 = MazsFonts.render("Punkti: 0", True, pygame.Color("#000000"))
+    Info2 = MazsFonts.render("Punkti: " + str(Speletajs.GetPunkti()), True, pygame.Color("#000000"))
     Logs.blit(Info2, (680, 190))
 
-    Info3 = MazsFonts.render("Kategorija: " + IzveletaKategorija, True, pygame.Color("#000000"))
+    Info3 = MazsFonts.render("Kategorija: " + Speletajs.GetKategorija(), True, pygame.Color("#000000"))
     Logs.blit(Info3, (180, 220))
 
-    Info4 = MazsFonts.render("Grūtība: " + IzveletaGrutiba, True, pygame.Color("#000000"))
+    Info4 = MazsFonts.render("Grūtība: " + Speletajs.GetGrutiba(), True, pygame.Color("#000000"))
     Logs.blit(Info4, (680, 220))
 
     # Jautājuma numurs
-    JautajumaNr = Fonts.render("Jautājums 1/10", True, pygame.Color("#000000"))
+    JautajumaNr = Fonts.render(
+        "Jautājums " + str(SpelesObjekts.GetJautajumaNr() + 1) + "/" + str(SpelesObjekts.GetJautajumuSkaits()),
+        True, pygame.Color("#000000"))
     JautajumaNrVieta = JautajumaNr.get_rect(center=(Platums // 2, 270))
     Logs.blit(JautajumaNr, JautajumaNrVieta)
 
-    # Pagaidu jautājums
-    Jautajums = MazsFonts.render(
-        "Kāda ir Latvijas galvaspilsēta?",
-        True,
-        pygame.Color("#000000")
-    )
-    JautajumaVieta = Jautajums.get_rect(center=(Platums // 2, 330))
-    Logs.blit(Jautajums, JautajumaVieta)
+    # Pašreizējais jautājums
+    Jautajums = SpelesObjekts.GetCurrentJautajums()
 
-    # Atbilžu pogas
-    for poga in AtbilzuPogas:
-        poga.Paradit(Logs, MazsFonts)
+    if Jautajums is not None:
+
+        JautajumaTeksts = MazsFonts.render(Jautajums.GetTeksts(), True, pygame.Color("#000000"))
+        JautajumaVieta = JautajumaTeksts.get_rect(center=(Platums // 2, 330))
+        Logs.blit(JautajumaTeksts, JautajumaVieta)
+
+        Atbildes = Jautajums.GetAtbildes()
+
+        for i in range(len(Atbildes)):
+            AtbilzuPogas[i].Teksts = Atbildes[i]
+            AtbilzuPogas[i].Paradit(Logs, MazsFonts)
 
     AtpakalPoga.Paradit(Logs, Fonts)
 
@@ -246,29 +255,31 @@ def ParaditRezultatuLogu():
     Logs.blit(Fons, (0, 0))
     Logs.blit(Karte, (100, 150))
 
+    Rezultats = SpelesObjekts.GetRezultats()
+
     Virsraksts = Fonts.render("SPĒLES REZULTĀTS", True, pygame.Color("#000000"))
     VirsrakstaVieta = Virsraksts.get_rect(center=(Platums // 2, 230))
     Logs.blit(Virsraksts, VirsrakstaVieta)
 
-    Teksts1 = MazsFonts.render("Spēlētājs: " + SpeletajaVards, True, pygame.Color("#000000"))
+    Teksts1 = MazsFonts.render("Spēlētājs: " + Rezultats.GetVards(), True, pygame.Color("#000000"))
     Logs.blit(Teksts1, (400, 260))
 
-    Teksts2 = MazsFonts.render("Kategorija: " + IzveletaKategorija, True, pygame.Color("#000000"))
+    Teksts2 = MazsFonts.render("Kategorija: " + Rezultats.GetKategorija(), True, pygame.Color("#000000"))
     Logs.blit(Teksts2, (400, 290))
 
-    Teksts3 = MazsFonts.render("Grūtība: " + IzveletaGrutiba, True, pygame.Color("#000000"))
+    Teksts3 = MazsFonts.render("Grūtība: " + Rezultats.GetGrutiba(), True, pygame.Color("#000000"))
     Logs.blit(Teksts3, (400, 320))
 
-    Teksts4 = MazsFonts.render("Punkti: 75", True, pygame.Color("#000000"))
+    Teksts4 = MazsFonts.render("Punkti: " + str(Rezultats.GetPunkti()), True, pygame.Color("#000000"))
     Logs.blit(Teksts4, (400, 365))
 
-    Teksts5 = MazsFonts.render("Pareizas atbildes: 8", True, pygame.Color("#000000"))
+    Teksts5 = MazsFonts.render("Pareizas atbildes: " + str(Rezultats.GetPareizasAtbildes()), True, pygame.Color("#000000"))
     Logs.blit(Teksts5, (400, 395))
 
-    Teksts6 = MazsFonts.render("Kļūdas: 2", True, pygame.Color("#000000"))
+    Teksts6 = MazsFonts.render("Kļūdas: " + str(Rezultats.GetKludas()), True, pygame.Color("#000000"))
     Logs.blit(Teksts6, (400, 425))
 
-    RezultataTeksts = MazsFonts.render( "Tu biji tuvu tam, lai atrastu dārgumu!", True, pygame.Color("#000000"))
+    RezultataTeksts = MazsFonts.render(Rezultats.GetRezultataTeksts(), True, pygame.Color("#000000"))
     RezultataVieta = RezultataTeksts.get_rect(center=(Platums // 2, 480))
     Logs.blit(RezultataTeksts, RezultataVieta)
 
@@ -284,36 +295,42 @@ def ParaditRezultatuTabulu():
     VirsrakstaVieta = Virsraksts.get_rect(center=(Platums // 2, 230))
     Logs.blit(Virsraksts, VirsrakstaVieta)
 
-    # Kolonnu X koordinātas
-    xVards = 230
-    xPunkti = 390
-    xPareizi = 520
-    xKludas = 660
+    xDatums = 170
+    xVards = 330
+    xPunkti = 470
+    xPareizi = 560
+    xKludas = 670
 
     y = 260
 
-    # Tabulas virsraksti
+    Logs.blit(MazsFonts.render("Datums un laiks", True, pygame.Color("#000000")), (xDatums, y))
     Logs.blit(MazsFonts.render("Vārds", True, pygame.Color("#000000")), (xVards, y))
     Logs.blit(MazsFonts.render("Punkti", True, pygame.Color("#000000")), (xPunkti, y))
     Logs.blit(MazsFonts.render("Pareizi", True, pygame.Color("#000000")), (xPareizi, y))
     Logs.blit(MazsFonts.render("Kļūdas", True, pygame.Color("#000000")), (xKludas, y))
 
-    # Pagaidu dati
-    Rezultati = [
-        ["Artjoms", "75", "8", "2"],
-        ["Gabriels", "90", "9", "1"],
-        ["Anna", "40", "5", "5"]
-    ]
+    Rezultati = SpelesObjekts.NolasitRezultatus()
+
+    # Izlaiž pirmo rindu, jo tur ir kolonnu nosaukumi
+    if len(Rezultati) > 0:
+        Rezultati = Rezultati[1:]
+
+    # Parāda tikai pēdējos 4 rezultātus
+    Rezultati = Rezultati[-4:]
+    Rezultati.reverse()
 
     y = 310
 
     for rezultats in Rezultati:
-        Logs.blit(MazsFonts.render(rezultats[0], True, pygame.Color("#000000")), (xVards, y))
-        Logs.blit(MazsFonts.render(rezultats[1], True, pygame.Color("#000000")), (xPunkti, y))
-        Logs.blit(MazsFonts.render(rezultats[2], True, pygame.Color("#000000")), (xPareizi, y))
-        Logs.blit(MazsFonts.render(rezultats[3], True, pygame.Color("#000000")), (xKludas, y))
 
-        y += 40
+        if len(rezultats) >= 8:
+            Logs.blit(MazsFonts.render(rezultats[0], True, pygame.Color("#000000")), (xDatums, y))
+            Logs.blit(MazsFonts.render(rezultats[1], True, pygame.Color("#000000")), (xVards, y))
+            Logs.blit(MazsFonts.render(rezultats[2], True, pygame.Color("#000000")), (xPunkti, y))
+            Logs.blit(MazsFonts.render(rezultats[3], True, pygame.Color("#000000")), (xPareizi, y))
+            Logs.blit(MazsFonts.render(rezultats[4], True, pygame.Color("#000000")), (xKludas, y))
+
+            y += 40
 
     AtpakalPoga.Paradit(Logs, Fonts)
 
@@ -392,7 +409,9 @@ while (Darbojas == True):
                         IzveletaGrutiba = poga.Teksts
                         print("Izvēlētā grūtība:", IzveletaGrutiba)
 
-                        # Vēlāk šeit sāksies pati spēle
+                        # Sāk spēli ar izvēlēto vārdu, kategoriju un grūtību
+                        SpelesObjekts.SaktSpeli(SpeletajaVards, IzveletaKategorija, IzveletaGrutiba)
+                        
                         Ekrans = "spele"
 
             elif Ekrans == "spele":
@@ -404,12 +423,19 @@ while (Darbojas == True):
                     if poga.VaiNospiesta(Pozicija):
                         print("Izvēlētā atbilde:", poga.Teksts)
 
-                        # Pagaidām pēc atbildes parāda rezultātu logu
-                        Ekrans = "rezultats"
+                        SpelesObjekts.ParbauditAtbildi(poga.Teksts)
+
+                        if SpelesObjekts.VaiSpeleBeigusies():
+                            SpelesObjekts.BeigtSpeli()
+                            Ekrans = "rezultats"
 
             elif Ekrans == "rezultats":
 
                 if IzvelnePoga.VaiNospiesta(Pozicija):
+                    SpeletajaVards = ""
+                    IzveletaKategorija = ""
+                    IzveletaGrutiba = ""
+                    Bridinajums = ""
                     Ekrans = "sakums"
 
             elif Ekrans == "rezultatu_tabula":
@@ -445,7 +471,7 @@ while (Darbojas == True):
                     SpeletajaVards += Event.unicode
                     Bridinajums = ""
 
-
+    # зārbauda, kurš ekrāns pašlaik ir aktīvs, un attēlo atbilstošo logu
     if Ekrans == "sakums":
         ParaditSakumaEkranu()
 

@@ -1,5 +1,4 @@
 from speletajs import Speletajs
-from kategorija import Kategorija
 from rezultats import Rezultats
 from failu_parvaldnieks import FailuParvaldnieks
 
@@ -7,15 +6,6 @@ class Spele:
     # galvena klase kas parvalda speles gaitu un savieno visu
     def __init__(self):
         self.__Speletajs = Speletajs()
-        
-        # Saraksts ar pieejamajām kategorijām
-        self.__Kategorijas = []
-        self.__Kategorijas.append(Kategorija(1, "Kultūra", "Jautājumi par kultūru"))
-        self.__Kategorijas.append(Kategorija(2, "Vēsture", "Jautājumi par vēsturi"))
-        self.__Kategorijas.append(Kategorija(3, "Sports", "Jautājumi par sportu"))
-        self.__Kategorijas.append(Kategorija(4, "Ģeogrāfija", "Jautājumi par ģeogrāfiju"))
-        self.__Kategorijas.append(Kategorija(5, "Matemātika", "Jautājumi par matemātiku"))
-
         self.__Jautajumi = [] 
         self.__JautajumaNr = 0
         self.__FailuParvaldnieks = FailuParvaldnieks()
@@ -31,7 +21,6 @@ class Spele:
         self.__Jautajumi = self.__FailuParvaldnieks.NolasitJautajumus(kategorija, grutiba)
 
     def GetSpeletajs(self): return self.__Speletajs
-    def GetKategorijas(self): return self.__Kategorijas
     def GetJautajumaNr(self): return self.__JautajumaNr
     def GetJautajumuSkaits(self): return len(self.__Jautajumi)
 

@@ -17,7 +17,7 @@ class Jautajums:
         for i in range(len(self._Atbildes)):
             print(str(i + 1) + ".", self._Atbildes[i])
 
-    # virtuala funkcija/ parbauda vai izvele sakrit ar pareizo atbildi
+   # pārbauda, vai izvēlētā atbilde ir pareiza
     def ParbauditAtbildi(self, atbilde):
         return atbilde == self._PareizaAtbilde
 
@@ -41,7 +41,7 @@ class VieglsJautajums(Jautajums):
         super().__init__(teksts, atbildes, pareiza_atbilde, kategorija, "Viegls")
 
     def GetPunktiParPareizu(self): return 10
-    def GetPunktiParNepareizu(self): return 5
+    def GetPunktiParNepareizu(self): return 2
 
 class VidejsJautajums(Jautajums):
     def __init__(self, teksts="", atbildes=None, pareiza_atbilde="", kategorija=""):
@@ -55,4 +55,4 @@ class GrutsJautajums(Jautajums):
         super().__init__(teksts, atbildes, pareiza_atbilde, kategorija, "Grūts")
 
     def GetPunktiParPareizu(self): return 10
-    def GetPunktiParNepareizu(self): return 5
+    def GetPunktiParNepareizu(self): return 10
