@@ -39,7 +39,7 @@ class FailuParvaldnieks:
         Fails = open(self.__RezultatuFails, "a", encoding="utf-8", newline="")
         Rakstitajs = csv.writer(Fails)
         Rakstitajs.writerow([
-            rezultats.GetVards(), rezultats.GetPunkti(), rezultats.GetPareizasAtbildes(),
+            rezultats.GetDatums(), rezultats.GetVards(), rezultats.GetPunkti(), rezultats.GetPareizasAtbildes(),
             rezultats.GetKludas(), rezultats.GetKategorija(), rezultats.GetGrutiba(),
             rezultats.GetRezultataTeksts()
         ])
@@ -66,5 +66,5 @@ class FailuParvaldnieks:
         except:
             Fails = open(self.__RezultatuFails, "w", encoding="utf-8", newline="")
             Rakstitajs = csv.writer(Fails)
-            Rakstitajs.writerow(["Vards", "Punkti", "Pareizi", "Kludas", "Kategorija", "Grutiba", "Dargums"])
+            Rakstitajs.writerow(["Datums", "Vards", "Punkti", "Pareizi", "Kludas", "Kategorija", "Grutiba", "Dargums"])
             Fails.close()

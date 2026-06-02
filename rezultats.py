@@ -1,3 +1,4 @@
+from datetime import datetime
 
 class Rezultats:
      # klase kas atbild par rezultata save/apstradi
@@ -9,6 +10,10 @@ class Rezultats:
         self.__Kludas = kludas
         self.__Grutiba = grutiba
         self.__Kategorija = kategorija
+
+        # Saglabā rezultāta izveides datumu un laiku
+        self.__Datums = datetime.now().strftime("%d.%m.%Y %H:%M")
+        
         #  nosaka tekstu atkarībā no iegūtajiem punktiem
         self.__RezultataTeksts = self.NoteiktRezultataTekstu(punkti)
         
@@ -19,7 +24,7 @@ class Rezultats:
             return "Tu biji tuvu tam, lai atrastu dārgumu!"
         else:
             return "Diemžēl tu neatradi dārgumu."
-        pass
+
     #get motodes 
     def GetVards(self): return self.__Vards
     def GetPunkti(self): return self.__Punkti
@@ -28,11 +33,16 @@ class Rezultats:
     def GetGrutiba(self): return self.__Grutiba
     def GetKategorija(self): return self.__Kategorija
     def GetRezultataTeksts(self): return self.__RezultataTeksts
+    def GetDatums(self): return self.__Datums
+
 
     # izdruka rez konsole testam
     def Paradit(self):
         print("Spēlētājs:", self.__Vards)
         print("Punkti:", self.__Punkti)
         print("Pareizas atbildes:", self.__PareizasAtbildes)
+        print("Kategorija:", self.__Kategorija)
+        print("Grūtība:", self.__Grutiba)
         print("Kļūdas:", self.__Kludas)
+        print("Datums:", self.__Datums)
         print("Rezultāts:", self.__RezultataTeksts)
