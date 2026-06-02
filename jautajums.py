@@ -28,26 +28,31 @@ class Jautajums:
     def GetKategorija(self): return self._Kategorija
     def GetGrutiba(self): return self._Grutiba
 
-    # noklusejuma punkti atvasinatas klases tos velak paraksta
-    def GetPunktiParPareizu(self): pass
-    def GetPunktiParNepareizu(self): pass
-    def __del__(self): pass
+    # virtuālās metodes, kuras tiek pārdefinētas atvasinātajās klasēs
+    def GetPunktiParPareizu(self):
+        return 0
+
+    def GetPunktiParNepareizu(self):
+        return 0
 
     #atvasinatas klases, kuras manto visu no "Jautajums" klases
 class VieglsJautajums(Jautajums):
     def __init__(self, teksts="", atbildes=None, pareiza_atbilde="", kategorija=""):
-        pass
-    def GetPunktiParPareizu(self): pass
-    def GetPunktiParNepareizu(self): pass
+        super().__init__(teksts, atbildes, pareiza_atbilde, kategorija, "Viegls")
+
+    def GetPunktiParPareizu(self): return 10
+    def GetPunktiParNepareizu(self): return 5
 
 class VidejsJautajums(Jautajums):
     def __init__(self, teksts="", atbildes=None, pareiza_atbilde="", kategorija=""):
-        pass
-    def GetPunktiParPareizu(self): pass
-    def GetPunktiParNepareizu(self): pass
+        super().__init__(teksts, atbildes, pareiza_atbilde, kategorija, "Vidējs")
+
+    def GetPunktiParPareizu(self): return 10
+    def GetPunktiParNepareizu(self): return 5
 
 class GrutsJautajums(Jautajums):
     def __init__(self, teksts="", atbildes=None, pareiza_atbilde="", kategorija=""):
-        pass
-    def GetPunktiParPareizu(self): pass
-    def GetPunktiParNepareizu(self): pass
+        super().__init__(teksts, atbildes, pareiza_atbilde, kategorija, "Grūts")
+
+    def GetPunktiParPareizu(self): return 10
+    def GetPunktiParNepareizu(self): return 5
