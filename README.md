@@ -26,7 +26,7 @@ Projektam ir pievienots izpildāmais fails DargumuMedibas.exe, kas atrodas mapē
 
 To iespējams palaist bez Python un Pygame instalēšanas.
 
-Lai spēle darbotos korekti, .exe failam jāatrodas kopā ar mapēm:assets, dati
+Lai spēle darbotos korekti, .exe failam jāatrodas kopā ar mapēm: assets, dati
 
 ## Autori
 
